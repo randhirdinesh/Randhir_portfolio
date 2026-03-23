@@ -217,13 +217,13 @@ const mediaCards = [
   {
     type: "image",
     title: "Autonomous Drone — Research Prototype",
-    text: "Traffic-rule and autonomous drone work presented as engineering proof instead of redirecting users to an older portfolio.",
+    text: "Traffic-rule and autonomous drone work presented.",
     src: `${import.meta.env.BASE_URL}media/drone-prototype.jpg`,
   },
   {
     type: "image",
     title: "Isaac Sim Warehouse AMR Scene",
-    text: "Simulation evidence kept directly inside the portfolio so recruiters see proof without leaving the site.",
+    text: "Simulation .",
     src: `${import.meta.env.BASE_URL}media/isaac-warehouse-sim.png`,
   },
 ];
