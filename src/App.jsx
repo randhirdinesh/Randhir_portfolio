@@ -96,8 +96,8 @@ const systems = [
       "Built custom mission behavior around plate detection and blasting sequences instead of relying on generic demo navigation.",
     ],
     badge: "Systems architect signal",
-    architectureImage: "/media/sandblasting_robot_v2.svg",
-    proofImage: "/media/sandblasting-ai-live-inference.jpg",
+    architectureImage: `${import.meta.env.BASE_URL}media/sandblasting_robot_v2.svg`,
+    proofImage: `${import.meta.env.BASE_URL}media/sandblasting-ai-live-inference.jpg`,
     proofCaption:
       "Real-time rust detection running on a Jetson-based edge stack, with surface severity estimation and geometric measurements feeding autonomous blasting decisions.",
     proofList: [
@@ -107,7 +107,7 @@ const systems = [
       "Integrated into the robot control pipeline rather than a standalone demo window",
     ],
     metrics: ["~5 FPS edge inference", "Offline deployment", "Depth-aware measurement", "Autonomous blasting trigger path"],
-    video: "/media/sandblasting-live-demo.mp4",
+    video: `${import.meta.env.BASE_URL}media/sandblasting-live-demo.mp4`,
   },
   {
     id: "airport-cargo",
@@ -136,7 +136,7 @@ const systems = [
       "Designed around logging and deterministic outputs so operators could trust results during high-throughput airport workflows.",
     ],
     badge: "Reliability-first",
-    architectureImage: "/media/cargo_counting_v2.svg",
+    architectureImage: `${import.meta.env.BASE_URL}media/cargo_counting_v2.svg`,
     metrics: ["24/7 operations mindset", "Event-driven inference", "ROI-constrained counting", "Audit-ready outputs"],
   },
   {
@@ -166,7 +166,7 @@ const systems = [
       "Built with calibration and iteration in mind so the system could improve across terminals and changing deployment layouts.",
     ],
     badge: "Noise-aware localization",
-    architectureImage: "/media/ble_ips_v2.svg",
+    architectureImage: `${import.meta.env.BASE_URL}media/ble_ips_v2.svg`,
     metrics: ["MQTT ingestion", "Filter-based stabilization", "Zone-level output", "Deployment-tuned calibration"],
   },
   {
@@ -196,7 +196,7 @@ const systems = [
       "Used simulation as an engineering tool for system validation and iteration, not as the final deliverable.",
     ],
     badge: "Fleet autonomy",
-    architectureImage: "/media/warehouse_amr_fleet_v2.svg",
+    architectureImage: `${import.meta.env.BASE_URL}media/warehouse_amr_fleet_v2.svg`,
     metrics: ["Multi-robot workflows", "Docking logic", "Simulation-backed iteration", "Warehouse autonomy"],
   },
 ];
@@ -206,25 +206,25 @@ const mediaCards = [
     type: "video",
     title: "Sandblasting Robot — Live Field Demo",
     text: "On-device inference and geometric rust analysis feeding the blasting decision path.",
-    src: "/media/sandblasting-live-demo.mp4",
+    src: `${import.meta.env.BASE_URL}media/sandblasting-live-demo.mp4`,
   },
   {
     type: "image",
     title: "Sandblasting Robot — Live Inference Screenshot",
     text: "Deployment proof: measured rust region, edge inference, and industrial UI trace on the robot system.",
-    src: "/media/sandblasting-ai-live-inference.jpg",
+    src: `${import.meta.env.BASE_URL}media/sandblasting-ai-live-inference.jpg`,
   },
   {
     type: "image",
     title: "Autonomous Drone — Research Prototype",
     text: "Traffic-rule and autonomous drone work presented as engineering proof instead of redirecting users to an older portfolio.",
-    src: "/media/drone-prototype.jpg",
+    src: `${import.meta.env.BASE_URL}media/drone-prototype.jpg`,
   },
   {
     type: "image",
     title: "Isaac Sim Warehouse AMR Scene",
     text: "Simulation evidence kept directly inside the portfolio so recruiters see proof without leaving the site.",
-    src: "/media/isaac-warehouse-sim.png",
+    src: `${import.meta.env.BASE_URL}media/isaac-warehouse-sim.png`,
   },
 ];
 
@@ -470,7 +470,11 @@ export default function App() {
             <div className="grid gap-6">
               <GlassPanel className="overflow-hidden p-0">
                 <div className="relative">
-                  <img src="/profile.jpg" alt="Randhir Dinesh portrait" className="h-[420px] w-full object-cover object-top" />
+                  <img
+  src="/Randhir_portfolio/profile.jpg"
+  alt="Randhir Dinesh portrait"
+  className="h-[420px] w-full rounded-2xl object-cover object-top"
+/>
                   <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#081610] via-[#081610]/70 to-transparent p-6">
                     <div className="text-xs uppercase tracking-[0.18em] text-lime-300">Personal brand</div>
                     <div className="mt-2 text-2xl font-semibold text-white">Randhir Dinesh</div>
