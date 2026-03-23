@@ -731,8 +731,8 @@ export default function App() {
             <div>
               <SectionTitle
                 eyebrow="Contact"
-                title="Available for robotics, autonomy, and edge-AI roles"
-                text="Best fit for teams building production robotics, industrial autonomy, airport systems, computer vision platforms, and safety-critical edge deployments."
+                title="Available for Robotics & Autonomy Roles"
+                text="Building production-grade autonomous systems for real-world deployment."
               />
 
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -757,12 +757,12 @@ export default function App() {
 
             <GlassPanel>
               <div className="flex items-center gap-2 text-sm font-semibold text-white">
-                <Globe className="h-4 w-4 text-lime-300" /> Hiring profile
+                <Globe className="h-4 w-4 text-lime-300" /> Currently Open For
               </div>
               <div className="mt-4 space-y-3 text-sm leading-7 text-slate-300">
-                <div className="rounded-2xl border border-white/10 bg-slate-950/65 px-4 py-3">Transferable UAE visa trajectory and open to UAE-based opportunities.</div>
-                <div className="rounded-2xl border border-white/10 bg-slate-950/65 px-4 py-3">Open to global relocation and international robotics / autonomy roles.</div>
-                <div className="rounded-2xl border border-white/10 bg-slate-950/65 px-4 py-3">Portfolio intentionally framed for CTO, staff engineer, and senior recruiter review.</div>
+                <div className="rounded-2xl border border-white/10 bg-slate-950/65 px-4 py-3">📍 UAE-based | Visa transferable</div>
+                <div className="rounded-2xl border border-white/10 bg-slate-950/65 px-4 py-3">🌍 Open to global roles</div>
+                <div className="rounded-2xl border border-white/10 bg-slate-950/65 px-4 py-3">⚙️ Built for CTO & senior engineering roles</div>
               </div>
             </GlassPanel>
           </div>
